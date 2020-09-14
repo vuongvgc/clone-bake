@@ -24,6 +24,11 @@ html {
 /* ---------------------------- */
 /* ------------Base------------ */
 /* ---------------------------- */
+.header__primary {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:#fff;
+}
 
 /* ---------------------------- */
 /* --------Header Section------ */
@@ -33,7 +38,14 @@ header {
 }
 .header__content {
     display: flex;
+    /*
+     use width: 70%; margin: 0 auto; 
+     do not use
     justify-content: center;
+    align-items: center; */
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
 }
@@ -43,14 +55,15 @@ header {
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
-    margin-right: 2.5rem;
-
 }
 /* nav */
 .nav__list {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
 }
 .nav__item {
+    width: 10%;
     display: inline-block;
 }
 .nav__link {
@@ -64,4 +77,24 @@ header {
 }
 .active, .nav__link:hover {
     color: #ff0e83;
+}
+/* ---------------------------- */
+/* --------carousel Section---- */
+/* ---------------------------- */
+.carousel {
+    background-image: url('../img/b3.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carousel__text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header__text {
+    font-size: 2rem;
 }
