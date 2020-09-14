@@ -2,10 +2,66 @@
 /* ------------Global----------- */
 /* ---------------------------- */
 /* * not sure call body tag */
+
+/* purple #ff0e83 */
+/* background blue-gray: #4e2a84 */
+
 html, body {
     font-family: 'Montserrat', sans-serif;
 }
-
+html {
+    /* font size default for all website  */
+    /* rem use for font size and margin  */
+    font-size: 10px;
+    /* 1rem : 20px */
+    /* browser default: 1rem = 16px */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* ---------------------------- */
 /* ------------Base------------ */
 /* ---------------------------- */
+
+/* ---------------------------- */
+/* --------Header Section------ */
+/* ---------------------------- */
+header {
+    background-color: #4e2a84;
+}
+.header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+/* logo */
+.header__logo {
+    font-size: 3.4rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 2.5rem;
+
+}
+/* nav */
+.nav__list {
+    list-style: none;
+}
+.nav__item {
+    display: inline-block;
+}
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.active, .nav__link:hover {
+    color: #ff0e83;
+}
