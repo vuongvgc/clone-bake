@@ -44,7 +44,7 @@ header {
     justify-content: center;
     align-items: center; */
     /* app dung cho noi dung lon */
-    width: 70%;
+    width: 55%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +58,9 @@ header {
     font-weight: 400;
 }
 /* nav */
+nav {
+    width: 90%;
+}
 .nav__list {
     display: flex;
     justify-content: space-evenly;
