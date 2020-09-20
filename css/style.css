@@ -105,3 +105,40 @@ nav {
 .header__text {
     font-size: 2rem;
 }
+/* ---------------------------- */
+/* --------intro Section------ */
+/* ---------------------------- */
+.intro {
+    display: grid;
+    grid-template-columns: repeat(4,1ft);
+}
+.intro__item {
+    
+}
+.intro__item--ab1 {
+    grid-column: 2 / span 2;
+
+}
+.intro__item--best {
+    grid-column: 1/ span 2;
+}
+.intro__item--ab3 {
+    grid-column: 3/ span 2;
+
+}
+.intro__img {
+    width: 100%;
+    display: block;
+}
+/* ---------------------------- */
+/* --------number Section------ */
+/* ---------------------------- */
+.number__content {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.number__item {
+    width: 25%;
+}
