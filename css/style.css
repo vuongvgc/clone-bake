@@ -34,6 +34,17 @@ html {
     margin: 2rem;
 }
 .header__secondary {
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 4px;
+    line-height: 6rem;
+    margin: 3rem 0;
+    padding: 3rem;
+    text-align: center;
+}
+.header__tertiary {
     font-size: 2.5rem;
     font-weight: 600;
     text-transform: capitalize;
@@ -221,4 +232,48 @@ nav {
     letter-spacing: 3px;
     padding: 2rem;
     line-height: 2.5rem;
+}
+
+/* ---------------------------- */
+/* --------services Section------ */
+/* ---------------------------- */
+.services {
+    background-image: url(/img/s1.jpg);
+    height: 620px;
+    background-position: top;
+    background-size: cover;
+    margin: 3rem 0;
+    padding: 1rem;
+}
+.service__content {
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+}
+.service__item {
+    text-align: center;
+}
+.service__icon {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.service__icon i {
+    font-size: 6rem;
+    color: #4e2a84;
+}
+.service__item:hover i {
+    color: #ff0e83;
+}
+.service__text {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    line-height: 3rem;
 }
