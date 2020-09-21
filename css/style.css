@@ -198,11 +198,27 @@ nav {
 /* --------number Section------ */
 /* ---------------------------- */
 .number__content {
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
     display: flex;
     justify-content: space-around;
 }
 .number__item {
     width: 25%;
+    text-align: center;
+    margin: 4rem 0;
+}
+.number__item p:nth-child(1) {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4e2a84;
+    line-height: 4.5rem;
+    padding: 1rem;
+}
+.number__item p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 2rem;
+    line-height: 2.5rem;
 }
