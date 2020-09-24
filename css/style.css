@@ -444,3 +444,43 @@ nav {
     border: 1px solid #ff0e83;
     color: #ff0e83;
 }
+/* ---------------------------- */
+/* ------------Feedback-------- */
+/* ---------------------------- */
+.feedback {
+    background-image: url('../img/cc1.jpg');
+    height: 460px;
+    background-position: top;
+    background-size: cover;
+    padding:4rem 2rem;
+}
+.feedback__content {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #ff0e83;
+    padding: 3rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+.feedback__content .owl-theme .owl-dots .owl-dot span {
+    background-color: gray;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #000;
+}
+.feedback__text {
+    font-size: 1.6rem;
+    color: #000;
+}
+.feedback__name {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+.feedback__icon {
+    color: #5AC0ED;
+    font-size: 2rem;
+    padding: 0 2rem;
+}

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <!-- lightbox2 -->
     <link rel="stylesheet" href="./css/lightbox.min.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.css">  
 </head>
@@ -374,7 +377,28 @@
         </div>
     </section>
     <!-- feedback  section-->
-    <section class="feedback"></section>
+    <section class="feedback">
+        <h2 class="header__secondary">TESTIMONIALS</h2>
+        <div class="feedback__content">
+            <div class="owl-carousel owl-theme">
+                <!-- feedback 1 -->
+                <div class="item">
+                    <p class="feedback__text"><i class="feedback__icon fa fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa minus eligendi repudiandae ipsam debitis ducimus quae quam similique voluptatum.<i class="feedback__icon fa fa-quote-right"></i></p>
+                    <p class="feedback__name">ALLY</p>
+                </div>
+                <!-- feedback 2 -->
+                <div class="item">
+                    <p class="feedback__text"><i class="feedback__icon fa fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa minus eligendi repudiandae ipsam debitis ducimus quae quam similique voluptatum.<i class="feedback__icon fa fa-quote-right"></i></p>
+                    <p class="feedback__name">ALLY</p>
+                </div>
+                <!-- feedback 3 -->
+                <div class="item">
+                    <p class="feedback__text"><i class="feedback__icon fa fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa minus eligendi repudiandae ipsam debitis ducimus quae quam similique voluptatum.<i class="feedback__icon fa fa-quote-right"></i></p>
+                    <p class="feedback__name">ALLY</p>
+                </div>
+        </div>
+
+    </section>
 
     <!-- contact  section-->
     <section class="contact"></section>
@@ -390,12 +414,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
     <!-- lightbox2 -->
     <script src="./js/lightbox.min.js"></script>
+    <!-- carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
     <!-- countup js -->
     <!-- Cài đặt -->
     <script src="./js/jquery.countup.js"></script>
     <!-- Gọi thư viện -->
     <script>
+        // counter 
         $('.counter').countUp();
+
+        // setup carousel 
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
     </script>
     
 </body>
