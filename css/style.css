@@ -429,6 +429,7 @@ nav {
     width: 4rem;
     height: 4rem;
     font-size: 2rem;
+    transition: all .2s;
 }
 /* hover */
 .team__item:hover .team__infor {
@@ -438,4 +439,8 @@ nav {
 }
 .team__item:hover .team__name {
     opacity: 0;
+}
+.icon__box--pink:hover {
+    border: 1px solid #ff0e83;
+    color: #ff0e83;
 }
