@@ -40,8 +40,8 @@ html {
     color:#fff;
     letter-spacing: 4px;
     line-height: 6rem;
-    margin: 3rem 0;
-    padding: 3rem;
+    margin: 2rem 0;
+    padding: 2rem;
     text-align: center;
 }
 .header__secondary--black {
@@ -74,7 +74,10 @@ html {
     color: #000;
     border: 1px solid #ff0e83;
 }
-
+/* full box image  */
+.img__box {
+    width: 100%;
+}
 
 /* ---------------------------- */
 /* --------Header Section------ */
@@ -284,7 +287,7 @@ nav {
 /* --------gallery Section------ */
 /* ---------------------------- */
 .gallery {
-    margin: 5rem 0;
+    margin: 6rem 0;
 }
 .gallery__content {
     width: 96%;
@@ -355,4 +358,84 @@ nav {
 .gallery__item:hover .gallery__text h3 {
     transform: translateY(-2rem);
     opacity: 1;
+}
+/* ---------------------------- */
+/* ------------Team----------- */
+/* ---------------------------- */
+.team {
+    background-color: #4e2a84;
+    padding: 5rem 0;
+    margin-top: 8rem;
+}
+/* content */
+.team__content {
+    width: 85%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+}
+/* item team  */
+.team__item {
+    position: relative;
+}
+/* name */
+.team__name {
+    background-color: #ff0e83;
+    padding: 2rem;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+.team__name h3 {
+    font-weight: 500;
+}
+/* information */
+.team__infor {
+    color: #fff;
+    padding: 10rem 4rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+}
+.team__infor h3{
+    color: #ff0e83;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+/* text */
+.team__text {
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+/* social icon  */
+.team__social {
+    padding-bottom: 1rem;
+    display: flex
+}
+.icon__box--pink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    margin-left: 2rem;
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+/* hover */
+.team__item:hover .team__infor {
+    opacity: 0.8;
+    background-color: #000;
+
+}
+.team__item:hover .team__name {
+    opacity: 0;
 }
