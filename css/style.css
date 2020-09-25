@@ -495,7 +495,9 @@ nav {
 .contact__form form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem 3rem;
+  /* not enough browsers grid-gap: 1.5rem 3rem; */
+  gap:  1.5rem 3rem;
+  /* full enough browsers */
 }
 .contact__item-big {
   grid-column: 1 / span 2;
