@@ -43,7 +43,25 @@ html {
     visibility: visible;
     opacity: 1;
   }
+/* animation */
+@keyframes toptobottom {
+  0% {}
+  25% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
 
+  }
+  100% {
+    transform: scale(1);
+
+  }
+  
+}
 /* ---------------------------- */
 /* ------------Base------------ */
 /* ---------------------------- */
@@ -79,6 +97,11 @@ html {
 .btn {
   padding: 12px 25px;
   border-radius: 5px;
+  animation-name: toptobottom;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
 }
 .btn__text {
   text-transform: uppercase;
