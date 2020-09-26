@@ -94,6 +94,9 @@ html {
   text-transform: capitalize;
   margin: 1rem 0;
 }
+.header__tertiary--pink {
+  color: #ff0e83;
+}
 .btn {
   padding: 12px 25px;
   border-radius: 5px;
@@ -629,4 +632,106 @@ nav {
 .contact__text  a {
   text-decoration: none;
   color: inherit;
+}
+/* ---------------------------- */
+/* ------------Footer-------- */
+/* ---------------------------- */
+footer {
+  margin-top: 6rem;
+  background-color: #000;
+  color: #fff;
+}
+.footer__content {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__item {
+  width: 22%;
+}
+.footer__text {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 3rem;
+  padding: 1rem 0;
+}
+/* social  */
+
+.icon__social {
+  padding:1rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon__box--pink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  margin-left: 1.5rem;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+/* working time  */
+.footer__time {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text--small {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+.footer__time {
+  border-bottom: 1px dashed #fff;
+}
+/* SUBSCRIBE US */
+.footer__form input, .footer__form button {
+  display: block;
+}
+.footer__form input {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 70%;
+} 
+.footer__form input {
+  outline: 0;
+}
+.footer__form button {
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  background-color: #ff0e83;
+  border-radius: 1rem;
+  transition: all .5s;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.footer__form button:hover {
+  background-color: #fff;
+}
+/* copyright  */
+.footer__copy {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem;
+  text-align: center;
+}
+.footer__copy a {
+  text-decoration: none;
+  color: #ff0e83;
+}
+.footer__copy a:hover {
+  color: #fff;
+}
+.footer__copy .icon__social {
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
 }
